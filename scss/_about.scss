@@ -1,0 +1,21 @@
+@use "variables" as *;
+.about-section {
+  margin-top: 20px;
+  
+  .about-img {
+    width: 400px;
+    border: 2px solid $primary-color-light-yellow;
+    border-radius: 50%;
+    box-shadow: 0 6px 6px -6px rgb(0, 0, 0),
+      0 10px 10px -10px rgb(0, 0, 0);
+  }
+
+  .about-info {
+    max-width: 600px;
+
+    .about-headline {
+      font-size: 3em;
+      color: $primary-color-light-yellow;
+    }
+  }
+}

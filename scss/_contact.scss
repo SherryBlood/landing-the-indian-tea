@@ -1,0 +1,50 @@
+@use "variables" as *;
+.contact-headline {
+  font-size: 2.5em;
+  color: $primary-color-light-yellow;
+}
+
+.contact-form,
+.my-modal {
+  .form-contact,
+  .my-modal-form {
+    margin-top: 10px;
+
+    .my-form-field {
+      position: relative;
+
+      .form-inp {
+        width: 300px;
+        padding: 8px;
+        border: 1px solid $primary-color-light-yellow;
+        background-color: transparent;
+        border-radius: 10px;
+        outline: none;
+        transition: 0.3s;
+      }
+
+      .form-inp:focus {
+        border-color: $secondary-color-light-green;
+      }
+
+      .label-form-inp {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        color: $primary-color-light-grey;
+        background-color: transparent;
+        padding: 0 5px;
+        transition: 0.2s;
+        pointer-events: none;
+      }
+
+      .form-inp:focus + .label-form-inp,
+      .form-inp:not(:placeholder-shown) + .label-form-inp {
+        top: -20px;
+        left: 5px;
+        font-size: 0.8em;
+        color: $primary-color-light-grey;
+      }
+    }
+  }
+}

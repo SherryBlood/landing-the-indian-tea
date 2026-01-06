@@ -1,0 +1,94 @@
+@use "variables" as *;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-text;
+  background-color: $primary-color-dark-grey;
+  color: $primary-color-light-grey;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: 0.3s;
+
+  body::-webkit-scrollbar,
+  .sort-description::-webkit-scrollbar,
+  .my-modal::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  body::-webkit-scrollbar-track,
+  .sort-description::-webkit-scrollbar-track,
+  .my-modal::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track-color);
+    transition: 0.3s;
+  }
+
+  body::-webkit-scrollbar-thumb,
+  .sort-description::-webkit-scrollbar-thumb,
+  .my-modal::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 10px;
+    border: 2px solid var(--scrollbar-thumb-border);
+  }
+
+  ::selection {
+    background-color: $primary-color-light-yellow;
+    color: $primary-color-dark-grey;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-headline;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      line-height: 0;
+      text-decoration: none;
+      color: $primary-color-light-grey;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      width: 88px;
+      height: 64px;
+      padding: 12px;
+    }
+
+    a:hover{
+      color: $primary-color-light-yellow;
+      border-color: $primary-color-light-yellow;
+      transition: all 0.3s;
+    }
+  }
+
+  p{
+    margin: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.content-center {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}

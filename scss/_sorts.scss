@@ -1,0 +1,56 @@
+@use "variables" as *;
+.sorts-section {
+  .carousel {
+    max-width: 600px;
+
+    .carousel-indicators {
+      background-color: transparent;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      background-color: $primary-color-light-yellow;
+      width: 4px;
+      border-radius: 50%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      opacity: 1;
+
+      .carousel-prev-icon,
+      .carousel-next-icon {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .carousel-item img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .sorts-info {
+    width: 400px;
+
+    .sort-description {
+      margin: 0;
+      padding: 0;
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+
+      .sorts-headline {
+        font-size: 2.7em;
+        color: $primary-color-light-yellow;
+      }
+    }
+
+    .active-description {
+      height: 400px;
+      opacity: 1;
+      overflow-y: auto;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@use "variables" as *;
+.tea-section{
+    .tea-headline{
+        font-size: 2.5em;
+        color: $primary-color-light-yellow;
+    }
+
+    .tea-cards{
+        align-items: flex-start;
+
+        .card{
+            border-color: $primary-color-light-yellow;
+
+            .card-body{
+                .card-title{
+                    font-size: 2em;
+                    color: $primary-color-light-yellow;
+                }
+            }
+
+            .list-group{
+                .list-group-item{
+                    color: $secondary-color-light-green;
+                    background-color: $primary-color-dark-grey;
+                    border-color: $primary-color-light-yellow;
+                }
+            }
+        }
+    }
+}

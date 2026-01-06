@@ -1,0 +1,13 @@
+$primary-color-dark-grey: #2e2e2e;
+$primary-color-light-grey: #f0f0f0;
+$primary-color-light-yellow: #fffc3f;
+$secondary-color-light-green: #2dff3e;
+
+$font-text: "Montserrat", sans-serif;
+$font-headline: "Kalam", serif;
+
+:root {
+  --scrollbar-track-color: #{$primary-color-dark-grey};
+  --scrollbar-thumb-color: #{$primary-color-light-yellow};
+  --scrollbar-thumb-border: #{$primary-color-dark-grey};
+}

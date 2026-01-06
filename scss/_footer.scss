@@ -1,0 +1,16 @@
+@use "variables" as *;
+.footer-section {
+  align-items: start;
+
+  .footer-info{
+    .footer-link{
+        color: $primary-color-light-grey;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .footer-link:hover{
+        color: $primary-color-light-yellow;
+    }
+  }
+}

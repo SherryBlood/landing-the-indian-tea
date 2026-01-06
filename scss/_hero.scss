@@ -1,0 +1,26 @@
+@use "variables" as *;
+.hero-section {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+   rgba(0, 0, 0, 0.3)),
+    url("../images/background.jpg");
+  padding: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  h1 {
+    font-size: 5em;
+    margin: 0;
+    padding: 36px;
+    background-color: transparent;
+    color: $primary-color-light-grey;
+    text-shadow: -1px -1px 0 $primary-color-light-yellow,
+      1px -1px 0 $primary-color-light-yellow,
+      -1px 1px 0 $primary-color-light-yellow,
+      1px 1px 0 $primary-color-light-yellow,
+      2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
